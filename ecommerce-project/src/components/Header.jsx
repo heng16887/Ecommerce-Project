@@ -4,7 +4,7 @@ import Logo from "../assets/images/logo-white.png";
 import MobileLogo from "../assets/images/mobile-logo.png";
 import SearchIcon from "../assets/images/icons/search-icon.png";
 import CartIcon from "../assets/images/icons/cart-icon.png";
-import "./header.css";
+import "./Header.css";
 
 export function Header({ cart }) {
   let totalQuantity = 0;
