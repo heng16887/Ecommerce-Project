@@ -6,7 +6,15 @@ import SearchIcon from "../assets/images/icons/search-icon.png";
 import CartIcon from "../assets/images/icons/cart-icon.png";
 import "./Header.css";
 
-export function Header({ cart }) {
+type HeaderProps = {
+  cart: {
+    productId: string;
+    quantity: number;
+    deliverOptionId: string;
+  }[];
+}; // type alias: work lik a variable, but for types
+
+export function Header({ cart }: HeaderProps) {
   let totalQuantity = 0;
   // Exercise 8j
   const navigate = useNavigate();
